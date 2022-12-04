@@ -1,0 +1,115 @@
+.footer {
+    background-color: #2f303a;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer__container {
+    align-items: baseline;
+    display: flex;
+  }
+  
+  
+  
+  .footer__address-list {
+    width: 231px;
+    margin-right: 70px;
+    font-style: normal;
+  }
+    
+  .footer__address-item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  
+  .footer__post-address {
+    color: var(--white-text-color);
+    text-decoration: none;
+    transition: var(--hover-anime);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+  }
+  }
+  
+  
+  .footer__contacts {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: var(--hover-anime);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+  }
+  }
+  
+   
+  
+  .footer__call {
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.14;
+    }
+  
+    .footer__social-list {
+      margin-top: 20px;
+      margin-right: 94px;
+    }
+  
+    .footer__social-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      }
+  
+    .footer__social-icon {
+      fill:var(--white-text-color) ;
+    }
+  
+    /* footer-subscribe */
+  .footer__subscribe {flex-basis: 570px;
+  }
+  
+  .footer__subscribe-form {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .footer__email-input {
+    background-color: inherit;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-right: 12px;
+    padding: 15px;
+    color: var(--white-text-color);
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.06em;
+    outline: transparent;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      line-height: calc(20/16);
+      letter-spacing: 0.06em;
+      opacity: 20%;
+      }
+
+      &:not(:placeholder-shown) {
+        border-color: var(--accent-color);
+      }
+  }
+  
+  .footer__icon-send {
+   fill: var(--white-text-color);
+  }

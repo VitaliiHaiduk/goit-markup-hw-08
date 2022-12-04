@@ -1,0 +1,39 @@
+.teem {padding-top: var(--primary-pt);
+    padding-bottom: var(--primary-pt);
+    background-color: var(--btn-bgc);
+  }
+  .teem__list {
+      display: flex;
+      margin-top: 50px;
+      text-align: center;
+      flex-wrap: wrap;
+      gap: 0 30px;
+  }
+  
+  .teem__card {
+      background-color: #fff;
+      flex-basis: calc(100% - 30px * 3) / 3;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+  }
+  
+  .teem__descr {
+    padding: 30px 10px;
+  }
+  .teem__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19; 
+    color: var(--title-text-color);
+  }
+  
+  .teem__profession {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+  .teem__social-icon {
+    fill: #AFB1B8;
+    transition: fill var(--hover-anime)
+  }

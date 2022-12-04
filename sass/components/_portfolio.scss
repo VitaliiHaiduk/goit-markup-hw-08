@@ -1,0 +1,73 @@
+.projects {
+    padding-top: var(--primary-pt);
+    padding-bottom: var(--primary-pt);
+  }
+  
+  .portfolio__list {
+    margin-top: 34px;  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .portfolio__section-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+  }
+  
+  .portfolio__project-type {font-size: 16px;
+    line-height: 1.88;
+    color: var(--primary-text-color);
+    padding-top: 4px;
+  }
+    
+  .portfolio__item {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top:none;
+    }
+  
+    .portfolio__descr {   
+      padding: 63px 24px;
+      color: var(--white-text-color);
+      font-size: 18px;
+      line-height: calc(28/18);
+      letter-spacing: 0.03em;
+      }
+  
+    .portfolio__link {
+      display: block;
+      transition: box-shadow var(--hover-anime);
+
+      &:hover,
+      &:focus {
+      box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      animation: port-slide to-top 2000ms both;
+    }
+    }
+  
+    
+    /* animation */
+   .portfolio__overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      background-color: rgba(33, 150, 243, 0.9);
+      transform: translateY(100%);
+
+      .portfolio__card:hover & ,
+      .portfolio__card:focus &  {
+        transform: translateY(0);
+        transition-duration: 500ms;
+      }
+    } 
+  
+      .portfolio__thumb {
+      position: relative;
+      overflow: hidden;
+    }
+  
