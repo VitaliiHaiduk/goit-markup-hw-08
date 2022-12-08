@@ -1,12 +1,15 @@
 .benefits {
-    padding-top: var(--primary-pt);
+    @extend %padding;
+    padding-bottom: 0;
   }
   
   .benefits__list {
     display: flex;  
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
+  
   .benefits__title{
     color: var(--title-text-color);
     margin-bottom: 10px;
@@ -17,8 +20,16 @@
     line-height: 1.14;
   }
   
+  .benefits__description {  
+    line-height: 1.71;
+    @extend %item-width;
+    
+  }
+
   .benefits__item {
-    width: 270px;
+
+    @extend %item-width;
+    
     height: 120px;
     margin-bottom: 30px;
     background-color: #F5F4FA;
@@ -29,7 +40,4 @@
     
   }
   
-  .benefits__description {  
-    line-height: 1.71;
-    width: 270px;
-  }
+  

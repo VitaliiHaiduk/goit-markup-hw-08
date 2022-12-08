@@ -1,9 +1,12 @@
 .footer {
     background-color: #2f303a;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
   }
   
   .footer__container {

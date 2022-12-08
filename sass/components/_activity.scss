@@ -1,18 +1,25 @@
-.activity {padding-top: var(--primary-pt);
-    padding-bottom: var(--primary-pt);}
+.activity {
+  @extend %padding;
+  @media screen and (max-width:1199px){
+    display: none;
+  }
+}
+
+    .activity__list {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      
+    }
+
    
-   &__list {
-     margin-top: 50px;
-     display: flex;
-     flex-wrap: wrap;
-     gap: 30px;
-   }
-   
-   &__item {
+   .activity__item {
      position: relative;
    }
    
-   &__thumb {
+   .activity__thumb {
      position: absolute;
      bottom: 0;
      left: 0;
@@ -21,7 +28,7 @@
      background-color: rgba(47, 48, 58, 0.8);
    }
    
-   &__descr {    
+   .activity__descr {    
      color: var(--white-text-color);
      text-transform: uppercase;
      font-size: inherit;

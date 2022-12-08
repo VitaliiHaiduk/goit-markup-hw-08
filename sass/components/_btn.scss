@@ -12,7 +12,7 @@
     cursor: pointer;
     }
   
-  &--main {
+  .btn--main {
     color: var(--white-text-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -56,7 +56,7 @@
 
     }
   
-  &--secondary {
+  .btn--secondary {
     color: var(--title-text-color);
     background-color: var(--btn-bgc);
     font-weight: 500;
@@ -85,7 +85,7 @@
     
 // btn__modal-close
 
-  &__modal-close {
+  .btn__modal-close {
     display: flex;
     position: absolute;
     padding: 0;
