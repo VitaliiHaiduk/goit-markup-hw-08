@@ -18,4 +18,8 @@
   .footer__logo {
     color: var(--white-text-color);
     margin-bottom: 20px;
+    @media screen and (max-width:1199px) {
+      padding-left: auto;
+      padding-right: auto;
+    }
   }

@@ -10,20 +10,48 @@
   }
   
   .footer__container {
+    @media screen and (max-width:767px) {
+      display: block;
+    }
+
     align-items: baseline;
+    justify-content: center;
     display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width:$tablet) {
+
+    justify-content: space-between;
+    }
+    
   }
-  
-  
+
+  .footer__contacts{
+    @media screen and (max-width:1199px){
+      text-align: center;
+    }
+
+    @media screen and (min-width:$desktop){
+      margin-right: 70px;
+    }
+    
+    
+  }
+
+ 
   
   .footer__address-list {
-    width: 231px;
-    margin-right: 70px;
+    
     font-style: normal;
   }
     
   .footer__address-item {
     margin-bottom: 10px;
+    white-space: nowrap;
+    
+    @media screen and (max-width:1199px){
+      text-align: center;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -43,10 +71,11 @@
   }
   
   
-  .footer__contacts {
+  .footer__contacts-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     transition: var(--hover-anime);
+
 
     &:hover,
     &:focus {
@@ -62,9 +91,19 @@
     font-size: inherit;
     font-weight: 700;
     line-height: 1.14;
+    
+    @media screen and (max-width:1199px){
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+    }
     }
   
     .footer__social-list {
+      @media screen and (max-width:1199px){
+        margin-right: auto;
+        margin-left: auto;
+      }
       margin-top: 20px;
       margin-right: 94px;
     }
@@ -78,14 +117,27 @@
     }
   
     /* footer-subscribe */
-  .footer__subscribe {flex-basis: 570px;
+  .footer__subscribe {
+    
+    @media screen and (max-width:1199px) {
+      flex-basis: 450px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    flex-basis: 570px;
   }
   
   .footer__subscribe-form {
-    display: flex;
+
+    @media screen and(min-width:$desktop){
+      display: flex;
     margin-top: 20px;
+    }
+    
+
   }
-  
+
+   
   .footer__email-input {
     background-color: inherit;
     width: 358px;
@@ -99,6 +151,15 @@
     line-height: calc(20/16);
     letter-spacing: 0.06em;
     outline: transparent;
+
+    
+
+      @media screen and (max-width:1199px){
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      }
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);
