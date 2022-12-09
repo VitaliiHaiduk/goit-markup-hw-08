@@ -1,4 +1,10 @@
 .hero {
+
+  @media screen and (max-width:1199px){
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-img.jpg);
     background-color: #C4C4C4; 
     background-size: cover;
@@ -14,6 +20,12 @@
     }
   
   .hero__title {
+
+    @media screen and (max-width:1199px){
+      font-size: 26px;
+      line-height: 1.6;
+      width: 360px;
+    }
     color: var(--white-text-color);
     font-weight: 900;
     font-size: 44px;
