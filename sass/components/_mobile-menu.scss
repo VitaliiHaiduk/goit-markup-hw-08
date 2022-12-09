@@ -21,8 +21,14 @@
   
   .menu-toggle:hover,
   .menu-toggle:focus {
-    background-color: var(--accent-color);
+    background-color: rgba(0, 0, 0, 0.1);
   }
+  .menu-toggle:hover .mobile__close-mobile,
+  .menu-toggle:focus .mobile__close-mobile {
+    fill: var(--accent-color);
+    transition:  var(--hover-anime);
+  }
+  
   
   .menu-container {
     position: fixed;
@@ -54,14 +60,9 @@
     margin: 0;
     list-style: none;
 }
-  
-//   .mobile-menu .link {
-//     display: block;
-//     padding: 10px;
-//     color: #fff;
-//     text-decoration: none;
-//   }
-
+.mobile__menu {
+    margin-top: 48px;
+}
   .mobile__menu-link {
     color: var(--title-text-color);
     font-size: 40px;
@@ -74,4 +75,25 @@
 
 .mobile__menu-link-current{
     color: var(--accent-color);
+}
+
+.mobile__contacts{
+    margin-top: 302px;
+}
+.mobile__contacts-link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+       color: var(--accent-color);
+       font-weight: 500;
+       font-size: 34px;
+       line-height: 40px;
+       letter-spacing: 0.02em;
+       transition:  var(--hover-anime)
+    }
 }
