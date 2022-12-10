@@ -508,7 +508,7 @@ h1, h2, h3, h4, h5, h6, p {
           justify-content: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .activity {
     display: none;
   }
@@ -751,6 +751,12 @@ h1, h2, h3, h4, h5, h6, p {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 @media screen and (max-width: 1199.98px) {
   .footer__contacts {
@@ -806,6 +812,11 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: inherit;
   font-weight: 700;
   line-height: 1.14;
+}
+@media screen and (max-width: 767.98px) {
+  .footer__call {
+    margin-top: 60px;
+  }
 }
 @media screen and (max-width: 1199.98px) {
   .footer__call {
