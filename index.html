@@ -143,6 +143,7 @@
         <ul class="list activity__list">
           <li class="activity__item">
             <img
+              srcset="./image/activity/img_act1@1x.jpg 1x, ./image/activity/img_act1@2x.jpg 2x"
               src="./image/activity-computer.jpg"
               alt="computer"
               width="370">
@@ -151,13 +152,17 @@
               </div>
           </li>
           <li class="activity__item">
-            <img src="./image/activity-phone.jpg" alt="phone" width="370">
+            <img
+             srcset="./image/activity/img_act2@1x.jpg 1x, ./image/activity/img_act2@2x.jpg 2x"
+             src="./image/activity-phone.jpg" alt="phone" width="370">
             <div class="activity__thumb">
               <p class="activity__descr">мобільні додатки</p>
             </div>
           </li>
           <li class="activity__item">
-            <img src="./image/activity-tablet.jpg" alt="tablet" width="370">
+            <img
+            srcset="./image/activity/img_act3@1x.jpg 1x, ./image/activity/img_act3@2x.jpg 2x"
+            src="./image/activity-tablet.jpg" alt="tablet" width="370">
             <div class="activity__thumb">
               <p class="activity__descr">дизайнерські рішення</p>
             </div>
@@ -167,12 +172,18 @@
       </section>
 
       <!-- team -->
-       <!-- <section class="teem">
+       <section class="teem">
         <div class="container">
         <h2 class="section__title">Наша команда</h2>
         <ul class="list teem__list">
           <li class="teem__card">
-            <img src="./image/teem-ihor.jpg" alt="ihor" width="270">
+            <picture>
+              <source media="(min-width:1200px)" srcset="./image/teem/img_1_270.jpg 1x, ./image/teem/img_1_540.jpg 2x">
+              <source media="(min-width:768px)" srcset="./image/teem/img_1_354.jpg 1x, ./image/teem/img_1_708.jpg 2x">
+              <source media="(max-width:767px)" srcset="./image/teem/img_1_450.jpg 1x, ./image/teem/img_1_900.jpg 2x">
+              <img  src="./image/teem/img_1_450.jpg" alt="ihor" width="270">
+            </picture>
+            
             <div class="teem__descr">
             <h3 class="teem__title">Ігор Дем'яненко</h3>
             <p class="teem__profession">Product Designer</p>            
@@ -213,7 +224,17 @@
             </div>
           </li>
           <li class="teem__card">
-            <img src="./image/teem-olha.jpg" alt="olha" width="270">
+            <img crcset=" 
+            ./image/teem/img_2_270.jpg 270w, 
+            ./image/teem/img_2_354.jpg 354w,
+            ./image/teem/img_2_450.jpg 450w,
+            ./image/teem/img_2_540.jpg 540w,
+            ./image/teem/img_2_708.jpg 708w,
+            ./image/teem/img_2_900.jpg 900w"
+
+            cizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+
+            src="./image/teem/img_2_450.jpg" alt="olha" width="270">
             <div class="teem__descr">
             <h3 class="teem__title ">Ольга Рєпіна</h3>
             <p class="teem__profession">Frontend Developer</p>
@@ -254,7 +275,17 @@
             </div>
           </li>
           <li class="teem__card">
-            <img src="./image/teem-mykola.jpg" alt="mykola" width="270">
+            <img crcset=" 
+            ./image/teem/img_3_270.jpg 270w, 
+            ./image/teem/img_3_354.jpg 354w,
+            ./image/teem/img_3_450.jpg 450w,
+            ./image/teem/img_3_540.jpg 540w,
+            ./image/teem/img_3_708.jpg 708w,
+            ./image/teem/img_3_900.jpg 900w"
+
+            cizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+
+            src="./image/teem/img_3_450.jpg" alt="mykola" width="270">
             <div class="teem__descr">
             <h3 class="teem__title ">Микола Тарасов</h3>
             <p class="teem__profession">Marketing</p>
@@ -295,7 +326,17 @@
             </div>
           </li>
           <li class="teem__card">
-            <img src="./image/teem-mykhailo.jpg" alt="mykhailo" width="270">
+            <img crcset=" 
+            ./image/teem/img_4_270.jpg 270w, 
+            ./image/teem/img_4_354.jpg 354w,
+            ./image/teem/img_4_450.jpg 450w,
+            ./image/teem/img_4_540.jpg 540w,
+            ./image/teem/img_4_708.jpg 708w,
+            ./image/teem/img_4_900.jpg 900w"
+
+            cizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+
+            src="./image/teem/img_4_450.jpg" alt="mykhailo" width="270">
             <div class="teem__descr">
             <h3 class="teem__title ">Михайло Єрмаков</h3>
             <p class="teem__profession">UI Designer</p>
@@ -337,7 +378,7 @@
           </li>
         </ul>
         </div>
-      </section> --> -->
+      </section>
 
       <!-- clients -->
       <section class="clients">

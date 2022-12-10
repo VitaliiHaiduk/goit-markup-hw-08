@@ -10,7 +10,7 @@
   }
   
   .footer__container {
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:767.98px) {
       display: block;
     }
 
@@ -27,7 +27,7 @@
   }
 
   .footer__contacts{
-    @media screen and (max-width:1199px){
+    @media screen and (max-width:1199.98px){
       text-align: center;
     }
 
@@ -46,7 +46,7 @@
     margin-bottom: 10px;
     white-space: nowrap;
     
-    @media screen and (max-width:1199px){
+    @media screen and (max-width:1199.98px){
       text-align: center;
     }
 
@@ -89,15 +89,14 @@
     font-weight: 700;
     line-height: 1.14;
     
-    @media screen and (max-width:1199px){
+    @media screen and (max-width:1199.98px){
       display: flex;
       justify-content: center;
-      margin-top: 60px;
-    }
+      }
     }
   
     .footer__social-list {
-      @media screen and (max-width:1199px){
+      @media screen and (max-width:1199.98px){
         margin-right: auto;
         margin-left: auto;
       }
@@ -116,7 +115,7 @@
     /* footer-subscribe */
   .footer__subscribe {
     
-    @media screen and (max-width:1199px) {
+    @media screen and (max-width:1199.98px) {
       flex-basis: 450px;
       margin-right: auto;
       margin-left: auto;
@@ -151,7 +150,7 @@
 
     
 
-      @media screen and (max-width:1199px){
+      @media screen and (max-width:1199.98px){
         display: block;
         margin-left: auto;
         margin-right: auto;

@@ -567,7 +567,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 0 30px;
+  gap: 30px;
 }
 
 .teem__card {
@@ -647,7 +647,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media screen and (max-width: 767px) {
   .clients__link {
-    width: 210px;
+    min-width: 210px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -739,7 +739,7 @@ h1, h2, h3, h4, h5, h6, p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .footer__container {
     display: block;
   }
@@ -752,7 +752,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__contacts {
     text-align: center;
   }
@@ -771,7 +771,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 10px;
   white-space: nowrap;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__address-item {
     text-align: center;
   }
@@ -807,7 +807,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 700;
   line-height: 1.14;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__call {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -815,7 +815,6 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 60px;
   }
 }
 
@@ -823,7 +822,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 20px;
   margin-right: 94px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__social-list {
     margin-right: auto;
     margin-left: auto;
@@ -843,7 +842,7 @@ h1, h2, h3, h4, h5, h6, p {
   -ms-flex-preferred-size: 570px;
       flex-basis: 570px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__subscribe {
     -ms-flex-preferred-size: 450px;
         flex-basis: 450px;
@@ -875,7 +874,7 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.06em;
   outline: transparent;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer__email-input {
     display: block;
     margin-left: auto;
