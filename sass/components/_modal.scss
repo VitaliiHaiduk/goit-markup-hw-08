@@ -18,6 +18,11 @@
   }
 
   .modal {
+
+    @media screen and (max-width:1199px){
+      width: 450px;
+    height: 609px;
+    }
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,6 +37,10 @@
     }
 
   .modal__call {
+
+    @media screen and (max-width:1199px){
+      line-height: 1.5;
+    }
   display: block;
   color: var(--title-text-color);
   text-align: center;
@@ -158,6 +167,10 @@ transition: var(--hover-anime);
 }
 
 .modal__agreement-text{
+  @media screen and (max-width:1199px){
+    font-size: 12px;
+    white-space: nowrap;
+  }
   margin-left: 9px;
   cursor: pointer;
   }
