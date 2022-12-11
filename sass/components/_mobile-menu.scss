@@ -31,7 +31,8 @@
   
   
   .menu-container {
-    position: absolute;
+    
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -45,8 +46,9 @@
     
   }
   
-  .menu-container.is-open {
+  .menu-container.is-open {    
     transform: translateX(0);
+    
   }
 
 

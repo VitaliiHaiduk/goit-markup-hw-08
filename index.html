@@ -68,7 +68,7 @@
 
       <!-- HERO -->
        <section class="hero">
-        <div class="container">
+        <div class="container hero__container">
         <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
         <button type="button" class="btn btn--main btn--main-order" data-modal-open>Замовити послугу</button>
         </div>
@@ -172,17 +172,23 @@
       </section>
 
       <!-- team -->
-       <!-- <section class="teem">
+      <section class="teem">
         <div class="container">
         <h2 class="section__title">Наша команда</h2>
         <ul class="list teem__list">
           <li class="teem__card">
-            <picture>
-              <source media="(min-width:1200px)" srcset="./image/teem/img_1_270.jpg 1x, ./image/teem/img_1_540.jpg 2x">
-              <source media="(min-width:768px)" srcset="./image/teem/img_1_354.jpg 1x, ./image/teem/img_1_708.jpg 2x">
-              <source media="(max-width:767px)" srcset="./image/teem/img_1_450.jpg 1x, ./image/teem/img_1_900.jpg 2x">
-              <img  src="./image/teem/img_1_450.jpg" alt="ihor" width="450">
-            </picture>
+            <img srcset="
+            ./image/teem/img_1_270.jpg 270w, 
+            ./image/teem/img_1_354.jpg 354w,
+            ./image/teem/img_1_450.jpg 450w,
+            ./image/teem/img_1_540.jpg 540w,
+            ./image/teem/img_1_708.jpg 708w,
+            ./image/teem/img_1_900.jpg 900w
+            "
+
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+
+            src="./image/teem/img_1450.jpg" alt="ihor" />
             
             <div class="teem__descr">
             <h3 class="teem__title">Ігор Дем'яненко</h3>
@@ -224,17 +230,18 @@
             </div>
           </li>
           <li class="teem__card">
-            <img crcset=" 
+            <img srcset="
             ./image/teem/img_2_270.jpg 270w, 
             ./image/teem/img_2_354.jpg 354w,
             ./image/teem/img_2_450.jpg 450w,
             ./image/teem/img_2_540.jpg 540w,
             ./image/teem/img_2_708.jpg 708w,
-            ./image/teem/img_2_900.jpg 900w"
+            ./image/teem/img_2_900.jpg 900w
+            "
 
-            cizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
 
-            src="./image/teem/img_2_450.jpg" alt="olha" width="450">
+            src="./image/teem/img_2_450.jpg" alt="olha" />
             <div class="teem__descr">
             <h3 class="teem__title ">Ольга Рєпіна</h3>
             <p class="teem__profession">Frontend Developer</p>
@@ -275,7 +282,7 @@
             </div>
           </li>
           <li class="teem__card">
-            <img crcset=" 
+            <img srcset="
             ./image/teem/img_3_270.jpg 270w, 
             ./image/teem/img_3_354.jpg 354w,
             ./image/teem/img_3_450.jpg 450w,
@@ -283,9 +290,9 @@
             ./image/teem/img_3_708.jpg 708w,
             ./image/teem/img_3_900.jpg 900w"
 
-            cizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
 
-            src="./image/teem/img_3_450.jpg" alt="mykola" width="450">
+            src="./image/teem/img_3_450.jpg" alt="mykola" />
             <div class="teem__descr">
             <h3 class="teem__title ">Микола Тарасов</h3>
             <p class="teem__profession">Marketing</p>
@@ -326,17 +333,19 @@
             </div>
           </li>
           <li class="teem__card">
-            <img crcset=" 
-            ./image/teem/img_4_270.jpg 270w, 
+            <img srcset="
+            ./image/teem/img_4_270.jpg 270w,
             ./image/teem/img_4_354.jpg 354w,
             ./image/teem/img_4_450.jpg 450w,
             ./image/teem/img_4_540.jpg 540w,
             ./image/teem/img_4_708.jpg 708w,
             ./image/teem/img_4_900.jpg 900w"
 
-            cizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+            src="./image/teem/img_4_450.jpg"
 
-            src="./image/teem/img_4_450.jpg" alt="mykhailo" width="450">
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+
+             alt="mykhailo" />
             <div class="teem__descr">
             <h3 class="teem__title ">Михайло Єрмаков</h3>
             <p class="teem__profession">UI Designer</p>
@@ -384,7 +393,7 @@
       <section class="clients">
         <h2 class="section__title clients__section-title">Постійні клієнти</h2>
         <ul class="list clients__list">
-          <li class="list"><a href="" class="clients__link">
+          <li class="list clients__item"><a href="" class="clients__link">
             <svg class="clients__icon" width= 106 height= 60>
               <use href="./image/icons.svg#logo"></use>
             </svg>    
@@ -447,7 +456,7 @@
         </address>
         </div>
 
-        <div>
+        <div class="footer__socials">
         <b class="footer__call">приєднуйтесь</b>
         <ul class="list social-list footer__social-list">
           <li class="social-item">
@@ -487,9 +496,11 @@
         <div class="footer__subscribe">
           <b class="footer__call">підпишіться на розсилку</b>
           <form class="footer__subscribe-form" name="subscribe_form">
+            
             <label class="footer__email-field">
               <input class="footer__email-input" type="email" name="subscribe_email" placeholder="E-mail">
             </label>
+          
             <button class="btn btn--main btn--main-subscribe" type="submit">Підписатися
               <svg class="footer__icon-send" width="24" height="24">
                 <use href="./image/icons.svg#icon-send"></use>
