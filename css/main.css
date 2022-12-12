@@ -1018,7 +1018,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media screen and (max-width: 1199px) {
   .modal {
-    width: 450px;
+    width: 93vw;
+    max-width: 450px;
     height: 609px;
   }
 }
