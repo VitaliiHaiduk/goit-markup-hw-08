@@ -1195,7 +1195,6 @@ textarea:focus-visible {
 @media screen and (max-width: 1199px) {
   .modal__agreement-text {
     font-size: 12px;
-    white-space: nowrap;
   }
 }
 

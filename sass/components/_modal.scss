@@ -168,9 +168,10 @@ transition: var(--hover-anime);
 }
 
 .modal__agreement-text{
+
   @media screen and (max-width:1199px){
     font-size: 12px;
-    white-space: nowrap;
+    
   }
   margin-left: 9px;
   cursor: pointer;
